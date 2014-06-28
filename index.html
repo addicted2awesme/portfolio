@@ -134,20 +134,19 @@
 				</ul>
 				<h2>Experience</h2>
 				<article id="experience">
-					<h3>Columbia Sportswear Company -</h3>
+					<h3>Columbia Sportswear Company | 2013 - Current</h3>
 					<p>Web Developer II. Worked within a local team in conjunction with multiple offsite teams and vendors. Built and maintained ecommerce sites and components for four different brands across 5 languages and 20+ countries.</p>
-					<h3>Owen Spencer Design & Development -</h3>
+					<h3>Owen Spencer Design & Development | 2010 - Current</h3>
 					<p>Owner and operator. Web design, development, and digital presence strategist. Worked with a variety of companies ranging from small local establishments all the way up to household name, global companies.</p>
-					
-					<h3>Bicycle Transportation Alliance | 2011 -</h3>
+					<h3>Bicycle Transportation Alliance | 2011</h3>
 					<p>Coordinator of the 2011 'Bike Commute Challenge' which is a statewide program with participation of over 1,200 businesses.</p>
-					<h3>Organic City Sounds | 2011 -</h3>
+					<h3>Organic City Sounds | 2011</h3>
 					<p>Design and development of an audio focused WordPress site. </p>
-					<h3>Icebreaker Merino Wool | 2011-</h3>
+					<h3>Icebreaker Merino Wool | 2011</h3>
 					<p>Design and development of business to business splash page with social media integration.</p>
-					<h3>The Suite Barbershop | 2010 -</h3>
+					<h3>The Suite Barbershop | 2010</h3>
 					<p>UX design, site design, and site development.</p>
-					<h3>InVisible Light | 2010 -</h3>
+					<h3>InVisible Light | 2010</h3>
 					<p>Responsive website, WordPress based blog customization, and support.</p>
 				</article>
 				
@@ -163,6 +162,25 @@
 			
 			<section class="content-block" id="contact" name="contact">
 				<h1 class="section-headline">Drop a Line</h1>
+				<div id="contact-form" class="clearfix">
+					    <ul id="errors" class="">
+					        <li id="info">Darn! It looks like you forgot something :)</li>
+					    </ul>
+					    <p id="success">Awww shucks, your gonna make me blush. I will get back to you as soon as I can.</p>
+					    <form method="post" action="process.php">
+					        <label for="name">Name: <span class="required">*</span></label>
+					        <input type="text" id="name" name="name" value="" placeholder="Whats your name?" required="required" autofocus="autofocus" />
+					         
+					        <label for="email">Email Address: <span class="required">*</span></label>
+					        <input type="email" id="email" name="email" value="" placeholder="yourname@something.com" required="required" />
+					         
+							<label for="message">Message: <span class="required">*</span></label>
+					        <textarea id="message" name="message" placeholder="Soooooo, whats up?" required="required"></textarea>
+					         
+					        <span id="loading"></span>
+					        <input type="submit" value="Send to Owen" id="submit-button"/>
+					    </form>
+					</div>
 			</section>
 		</div><!-Begin Content Wrapper!->
 	</div><!-End Wrapper!->
