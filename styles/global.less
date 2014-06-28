@@ -1,0 +1,321 @@
+@import "bootstrap/bootstrap.less";
+@import "typography.less";
+/*The basics*/
+*::-moz-selection {
+	background: yellow;
+}
+*::selection {
+	background: yellow;
+}
+a {
+	color: @red;
+	text-decoration: none;
+	&:hover {
+		background: @tan;
+	}
+}
+html {
+	background: @tan;
+	.body-1;
+}
+* {
+	.box-sizing(border-box);
+}
+
+/*Wrapper*/
+.biggie-smalls {
+	.make-row();
+	.container-fixed();
+}
+.content-wrapper {
+	margin-top: 200px;
+}
+/*Headlines*/
+.section-headline {
+	.headline-2;
+	.center-text;
+}
+.section-subheadline {
+	.headline-3;
+	.center-text;
+	font-style: italic;
+	margin-bottom: @margin-large;
+}
+h3 {
+	.headline-3;
+}
+p {
+	margin-bottom: @margin-standard;
+	line-height: 1.4;
+}
+header {
+	background: @body-bg-color;
+	position: fixed;
+	width: 100%;
+	left: 0;
+	top: 0;
+	z-index: 99;
+	.clearfix();
+	.logo {
+	.make-md-column(12);
+		line-height: .65;
+		.rotate(-10deg);
+		.fname, .lname {
+			width: 100%;
+			float: left;
+			.center-text;
+			.headline-1;
+		}
+	}
+	nav {
+		.make-md-column(12);
+		.hidden-sm;
+		.hidden-xs;
+		margin-top: @margin-standard;
+		ul li {
+			.make-md-column(3);
+			padding: 5px;
+			.headline-3;
+			.center-text;
+			line-height: 1.5;
+			a {
+				height: 100%;
+				width: 100%;
+				display: block;
+				.transition(all .25s);
+			}
+		}
+	}
+}
+
+/*Content*/
+.content-block {
+	.make-row();
+	min-height: 700px;
+	height: auto;
+	.clearfix();
+	padding: @padding-large;
+}
+.content-copy {
+	width: 80%;
+	.center-block;
+}
+.project-block {
+	padding: @padding-large;
+	.make-md-column(6);
+	h2 {
+		.headline-3;
+		margin-bottom: @margin-standard;
+	}
+	.screengrab {
+		.img-responsive();
+		margin-bottom: @margin-standard;
+	}
+}
+#il-block {
+	.screengrab {
+		width: 30%;
+		float: left;
+		margin-right: 25px;
+	}
+	p {
+		width: 60%;
+		float: right;
+		position: relative;
+	}
+}
+#resume {
+	h2{
+		.headline-3;
+		border-bottom: 2px solid @blue;
+	}
+	h3 {
+		.headline-4;
+	}
+	#skills {
+		.center-text;
+		
+		li {
+			display: inline-block;
+			margin: @margin-large;
+		}
+	}
+}
+#meet, #resume {
+	background: @green;
+}
+#portfolio, #contact {
+	background: @tan;
+}
+
+/**Contact Form*/
+#contact-form {
+	.make-sm-column(12);
+	.make-md-column(8);
+	.make-md-column-offset(2);
+}
+#contact-form input, 
+#contact-form select, 
+#contact-form textarea, 
+#contact-form label {
+ 	float: left; 
+    clear: both;
+}
+#contact-form input, 
+#contact-form select, 
+#contact-form textarea {
+  	outline: 0px !important;
+    -webkit-appearance: none;
+    border: none;
+    width: 100%;
+    height: 35px;
+    float: left; 
+    clear: both;
+	margin-bottom: @margin-standard;
+    padding: @padding-standard;
+}
+#contact-form input:focus, 
+#contact-form select:focus, 
+#contact-form textarea:focus {
+	border: none;
+   -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    -o-box-shadow: none;
+    box-shadow: none;
+    font-size: 24px;
+    outline: 0px !important;
+    -webkit-appearance: none;
+}
+#contact-form textarea {
+    height:150px;
+    resize: none;
+}
+#contact-form label {
+    display: block;
+    margin-bottom: @margin-small;
+}
+#contact-form .required {
+    font-weight:bold;
+    color: @red;    
+}
+#contact-form #submit-button {
+    width: auto;
+    height: auto;
+    font-size: @body-fontsize;
+    padding: @padding-standard;
+    cursor: pointer;
+    color: @white;
+    border: none;
+    display: block;
+    float: left;
+	background-color: @blue;
+}
+#contact-form #submit-button:hover {
+    background-color: @black;
+}
+#contact-form #submit-button:active {
+    position:relative;
+    top:1px;
+}
+#contact-form #loading {
+    width:32px;
+    height:32px;
+    background-image:url(../img/loading.gif);
+    display:block;
+    position:absolute;
+    right:130px;
+    bottom:16px;
+    display:none;
+}
+#errors {
+    border:solid 1px #E58E8E;
+    padding:10px;
+    margin:25px 0px;
+    display:block;
+    width:437px;
+    -webkit-border-radius:8px;
+    -moz-border-radius:8px;
+    border-radius:8px;
+    background:#FFE6E6 url(../img/cancel_48.png) no-repeat 405px center;
+    display:none;
+}
+#errors li {
+    padding:2px;
+    list-style:none;    
+}
+#errors li:before {
+    content: ' - ';    
+}
+#errors #info {
+    font-weight:bold;
+}
+#errors #info:before {
+    content: '';    
+}
+#success {
+    border:solid 1px #83D186;
+    padding:25px 10px;
+    margin:25px 0px;
+    display:block;
+    width:437px;
+    -webkit-border-radius:8px;
+    -moz-border-radius:8px;
+    border-radius:8px;
+    background:#D3EDD3 url(../img/accepted_48.png) no-repeat 405px center;
+    font-weight:bold;
+    display:none;
+}
+#errors.visible, #success.visible {
+    display:block;    
+}
+#req-field-desc {
+    font-style:italic;
+}
+/* Remove box shadow firefox, chrome and opera put around required fields. It looks rubbish. */
+input:required, textarea:required {
+    -moz-box-shadow:none;
+    -webkit-box-shadow:none;
+    -o-box-shadow:none;
+    box-shadow:none;
+}
+ 
+/* Normalize placeholder styles */
+ 
+/* chrome, safari */
+::-webkit-input-placeholder {
+    color:#CCC;
+    font-style:italic;
+}
+ 
+/* mozilla */
+input:-moz-placeholder, textarea:-moz-placeholder {
+    color:#CCC;
+    font-style:italic;
+}
+ 
+/* ie (faux placeholder) */
+input.placeholder-text, textarea.placeholder-text  { 
+    color:#CCC;
+    font-style:italic;
+}
+
+
+@media (max-width: @screen-md-max) {
+	header .logo {
+		.rotate(0deg);
+	}
+}
+
+@media(max-width: @screen-sm-max) {
+	.project-block {
+		width: 100%;
+	}
+
+}
+
+@media(max-width: @screen-xs-max) {
+
+	#contact-form #submit-button {
+		width: 100%;
+	} 
+}
