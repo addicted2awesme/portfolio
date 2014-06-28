@@ -1,0 +1,40 @@
+/*Colourz*/
+/*Fontz*/
+/*Paddingz & Marginz*/
+/*Nav*/
+.body-1 {
+  font-family: 'Quicksand', helvetica-neue, helvetica, sans-serif;
+  font-size: 20px;
+  color: #666666;
+}
+.body-2 {
+  font-family: 'Quicksand', helvetica-neue, helvetica, sans-serif;
+  font-size: 16px;
+  color: #666666;
+}
+.headline-1 {
+  font-family: 'Cookie', cursive;
+  font-size: 80px;
+  color: #89b2a2;
+  text-shadow: 2px 2px 0px #fb7968;
+}
+.headline-2 {
+  font-family: 'Cookie', cursive;
+  font-size: 60px;
+  color: #fb7968;
+  text-shadow: 2px 2px 0px #89b2a2;
+}
+.headline-3 {
+  font-family: 'Quicksand', helvetica-neue, helvetica, sans-serif;
+  font-size: 28px;
+  color: #89b2a2;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+.headline-4 {
+  font-family: 'Quicksand', helvetica-neue, helvetica, sans-serif;
+  font-size: 24px;
+  color: #89b2a2;
+  font-weight: 400;
+  margin: 10px 0;
+}
