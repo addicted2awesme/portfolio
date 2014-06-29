@@ -990,6 +990,7 @@ html {
   color: #faf4b1;
   text-shadow: 2px 2px 0px #45aab8;
   text-align: center;
+  margin-bottom: 20px;
 }
 .section-subheadline {
   font-family: 'Quicksand', 'helvetica-neue', 'helvetica', sans-serif;
@@ -1218,7 +1219,7 @@ header nav ul li a {
 }
 #resume #skills li {
   display: inline-block;
-  margin: 40px;
+  margin: 20px;
 }
 #meet,
 #resume {
@@ -1396,13 +1397,6 @@ textarea.placeholder-text {
   color: #CCC;
   font-style: italic;
 }
-@media (max-width: 1199px) {
-  header .logo {
-    -webkit-transform: rotate(0deg);
-    -ms-transform: rotate(0deg);
-    transform: rotate(0deg);
-  }
-}
 @media (max-width: 991px) {
   header .logo {
     margin-top: 25px;
@@ -1436,5 +1430,9 @@ textarea.placeholder-text {
   }
   .section-headline i {
     display: none !important;
+  }
+  #resume #skills li {
+    display: inline-block;
+    margin: 10px;
   }
 }

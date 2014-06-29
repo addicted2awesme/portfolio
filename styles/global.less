@@ -34,6 +34,7 @@ html {
 .section-headline {
 	.headline-2;
 	.center-text;
+	margin-bottom: @margin-standard;
 }
 .section-subheadline {
 	.headline-3;
@@ -136,10 +137,9 @@ header {
 	}
 	#skills {
 		.center-text;
-		
 		li {
 			display: inline-block;
-			margin: @margin-large;
+			margin: @margin-standard;
 		}
 	}
 }
@@ -303,9 +303,7 @@ input.placeholder-text, textarea.placeholder-text  {
 
 
 @media (max-width: @screen-md-max) {
-	header .logo {
-		.rotate(0deg);
-	}
+
 }
 
 @media(max-width: @screen-sm-max) {
@@ -327,14 +325,11 @@ input.placeholder-text, textarea.placeholder-text  {
 				padding: 0;
 			}
 		}
-		
 	}
 	.project-block {
 		width: 100%;
 	}
-
 }
-
 @media(max-width: @screen-xs-max) {
 	.content-block, .project-block {
 		.center-text;
@@ -345,4 +340,13 @@ input.placeholder-text, textarea.placeholder-text  {
 	.section-headline i {
 		.hide;
 	}
+	#resume {
+		#skills {
+			li {
+				display: inline-block;
+				margin: @margin-small;
+			}
+		}
+	}
+
 }

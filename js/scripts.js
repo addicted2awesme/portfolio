@@ -11,12 +11,12 @@ $(function() {
       }
     }
   });
-});
-
-$(document).ready(function(){
-	var navopen = false;
-	$("#whopper").click(function() {
-		if(navopen == true) {
+  
+  
+  var navopen = false;
+  
+  function flippinBurgerz(){
+  		if(navopen == true) {
 			$("nav").fadeOut(100);
 			$("nav").removeClass("active");
 			navopen = false;
@@ -26,5 +26,12 @@ $(document).ready(function(){
 			$("nav").addClass("active");
 			navopen = true;
 		}
-	});
+	}
+	
+	$("#whopper, nav a").click(flippinBurgerz);
+
 });
+
+
+
+
