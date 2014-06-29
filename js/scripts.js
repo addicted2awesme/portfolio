@@ -6,7 +6,7 @@ $(function() {
       if (target.length) {
         $('html,body').animate({
           scrollTop: target.offset().top-100
-        }, 500);
+        }, 300);
         return false;
       }
     }
@@ -14,18 +14,17 @@ $(function() {
 });
 
 $(document).ready(function(){
-	
+	var navopen = false;
 	$("#whopper").click(function() {
-/* 		$("nav").toggle(200); */
-		$("nav").addClass("active");
-		$("nav").slideDown(300);
-		if(condition) {
-			// code to be executed if condition is true
+		if(navopen == true) {
+			$("nav").fadeOut(100);
+			$("nav").removeClass("active");
+			navopen = false;
 		} 
 		else {
-			// code to be executed if condition is false
+			$("nav").fadeIn(100);
+			$("nav").addClass("active");
+			navopen = true;
 		}
-		
-
 	});
 });

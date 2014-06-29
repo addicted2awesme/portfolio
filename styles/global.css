@@ -1418,6 +1418,10 @@ textarea.placeholder-text {
     background: #faf4b1;
     margin-top: 83px;
   }
+  header nav ul li {
+    margin-bottom: 0;
+    padding: 0;
+  }
   .project-block {
     width: 100%;
   }
