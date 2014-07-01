@@ -924,13 +924,13 @@
   font-family: 'Cookie', cursive;
   font-size: 60px;
   color: #45aab8;
-  text-shadow: 2px 2px 0px #ed834e;
+  text-shadow: 2px 2px 0px #f06b50;
 }
 .headline-2 {
   font-family: 'Quicksand', 'helvetica-neue', 'helvetica', sans-serif;
   font-size: 48px;
-  color: #faf4b1;
-  text-shadow: 2px 2px 0px #45aab8;
+  color: #45aab8;
+  /* 	text-shadow: 2px 2px 0px @blue; */
 }
 .headline-3 {
   font-family: 'Quicksand', 'helvetica-neue', 'helvetica', sans-serif;
@@ -954,21 +954,23 @@
   background: #FFF;
 }
 a {
-  color: #ed834e;
+  color: #f06b50;
   text-decoration: none;
 }
 a:hover {
-  background: #ffe545;
+  /* 		background: @tan; */
 }
 html {
-  background: #ffe545;
+  background: #45aab8;
   font-family: 'Quicksand', 'helvetica-neue', 'helvetica', sans-serif;
   font-size: 20px;
   color: #666666;
 }
-* {
-  -webkit-box-sizing: border-box;
+*,
+*:before,
+*:after {
   -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 /*Wrapper*/
@@ -981,14 +983,14 @@ html {
   padding-right: 15px;
 }
 .content-wrapper {
-  margin-top: 200px;
+  margin-top: 105px;
 }
 /*Headlines*/
 .section-headline {
   font-family: 'Quicksand', 'helvetica-neue', 'helvetica', sans-serif;
   font-size: 48px;
-  color: #faf4b1;
-  text-shadow: 2px 2px 0px #45aab8;
+  color: #45aab8;
+  /* 	text-shadow: 2px 2px 0px @blue; */
   text-align: center;
   margin-bottom: 20px;
 }
@@ -1014,13 +1016,14 @@ p {
   line-height: 1.4;
 }
 header {
-  background: #faf4b1;
+  background: #FFF;
   position: fixed;
   width: 100%;
   height: 110px;
   left: 0;
   top: 0;
-  z-index: 99;
+  z-index: 10;
+  border-bottom: 2px inset #45aab8;
 }
 header:before,
 header:after {
@@ -1045,11 +1048,11 @@ header .logo {
   padding-right: 15px;
   text-align: center;
   line-height: .55;
-  margin-top: 10px;
+  margin-top: 20px;
   font-family: 'Cookie', cursive;
   font-size: 60px;
   color: #45aab8;
-  text-shadow: 2px 2px 0px #ed834e;
+  text-shadow: 2px 2px 0px #f06b50;
 }
 @media (min-width: 992px) {
   header .logo {
@@ -1059,46 +1062,18 @@ header .logo {
 }
 header #whopper {
   position: absolute;
-  top: 20px;
+  top: 30px;
   left: 20px;
-  display: none !important;
-}
-@media (min-width: 768px) and (max-width: 991px) {
-  header #whopper {
-    display: block !important;
-  }
-  tableheader #whopper {
-    display: table;
-  }
-  trheader #whopper {
-    display: table-row !important;
-  }
-  thheader #whopper,
-  tdheader #whopper {
-    display: table-cell !important;
-  }
-}
-@media (max-width: 767px) {
-  header #whopper {
-    display: block !important;
-  }
-  tableheader #whopper {
-    display: table;
-  }
-  trheader #whopper {
-    display: table-row !important;
-  }
-  thheader #whopper,
-  tdheader #whopper {
-    display: table-cell !important;
-  }
 }
 header nav {
   position: relative;
   min-height: 1px;
   padding-left: 15px;
   padding-right: 15px;
-  margin-top: 20px;
+  display: none;
+  /* 		background: @white; */
+  margin-top: 15px;
+  border-bottom: 2px inset #45aab8;
 }
 @media (min-width: 992px) {
   header nav {
@@ -1119,6 +1094,8 @@ header nav ul li {
   margin-bottom: 20px;
   text-align: center;
   line-height: 1.5;
+  margin-bottom: 0;
+  padding: 0;
 }
 @media (min-width: 992px) {
   header nav ul li {
@@ -1223,11 +1200,11 @@ header nav ul li a {
 }
 #meet,
 #resume {
-  background: #b0d1b2;
+  background: #acc1b5;
 }
 #portfolio,
 #contact {
-  background: #ffe545;
+  background: #faf4b1;
 }
 /**Contact Form*/
 #contact-form {
@@ -1295,7 +1272,7 @@ header nav ul li a {
 }
 #contact-form .required {
   font-weight: bold;
-  color: #ed834e;
+  color: #f06b50;
 }
 #contact-form #submit-button {
   width: auto;
@@ -1307,10 +1284,10 @@ header nav ul li a {
   border: none;
   display: block;
   float: left;
-  background-color: #45aab8;
+  background-color: #f06b50;
 }
 #contact-form #submit-button:hover {
-  background-color: #b0d1b2;
+  background-color: #acc1b5;
 }
 #contact-form #submit-button:active {
   position: relative;
@@ -1398,8 +1375,11 @@ textarea.placeholder-text {
   font-style: italic;
 }
 @media (max-width: 991px) {
+  header {
+    border-bottom: none;
+  }
   header .logo {
-    margin-top: 25px;
+    margin-top: 20px;
   }
   header .logo .fname,
   header .logo .lname {
@@ -1409,8 +1389,8 @@ textarea.placeholder-text {
   }
   header nav {
     display: none;
-    background: #faf4b1;
-    margin-top: 83px;
+    background: #FFF;
+    margin-top: 85px;
   }
   header nav ul li {
     margin-bottom: 0;
