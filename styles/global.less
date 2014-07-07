@@ -8,14 +8,13 @@
 	background: #FFF;
 }
 a {
-	color: @red;
-	text-decoration: none;
+	color: inherit;
+	text-decoration: underline;
 	&:hover {
-/* 		background: @tan; */
+		opacity: 0.8;
 	}
 }
 html {
-	background: @blue;
 	.body-1;
 }
 *, *:before, *:after {
@@ -34,32 +33,28 @@ html {
 }
 /*Headlines*/
 .section-headline {
-	.headline-2;
 	.center-text;
 	margin-bottom: @margin-standard;
 }
+
 .section-subheadline {
-	.headline-3;
 	.center-text;
 	font-style: italic;
 	margin: @margin-large 0;
-}
-h3 {
-	.headline-3;
 }
 p {
 	margin-bottom: @margin-standard;
 	line-height: 1.4;
 }
 header {
-	background: #FFF;
+	background: @bright-blue;
 	position: fixed;
 	width: 100%;
 	height: 110px;
 	left: 0;
 	top: 0;
 	z-index: 10;
-	border-bottom: 2px inset @blue;
+	border-bottom: 2px inset @true-white;
 	.clearfix();
 	.logo {
 		.make-md-column(12);
@@ -72,17 +67,17 @@ header {
 		position: absolute;
 		top: 30px;
 		left: 20px;
+		color: @true-white;
+		cursor: pointer;
 	}
 	nav {
 		.make-md-column(12);
 		display: none;
-/* 		background: @white; */
 		margin-top: 15px;
-		border-bottom: 2px inset @blue;
+		border-bottom: 2px inset @bright-blue;
 		ul li {
 			.make-md-column(3);
 			padding: 5px;
-			.headline-3;
 			.center-text;
 			line-height: 1.5;
 			margin-bottom: 0;
@@ -91,12 +86,13 @@ header {
 				height: 100%;
 				width: 100%;
 				display: block;
+				color: @true-white;
+				text-decoration: none;
 				.transition(all .25s);
 			}
 		}
 	}
 }
-
 /*Content*/
 .content-block {
 	.make-row();
@@ -104,6 +100,20 @@ header {
 	height: auto;
 	.clearfix();
 	padding: @padding-large;
+}
+.blue-white {
+	background: @bright-blue;
+	color: @true-white;
+	h2 {
+		.headline-3;
+	}
+}
+.white-blue {
+	background: @true-white;
+	color: @bright-blue;
+	h2 {
+		.headline-3;
+	}
 }
 .content-copy {
 	width: 80%;
@@ -113,7 +123,6 @@ header {
 	padding: @padding-large;
 	.make-md-column(6);
 	h2 {
-		.headline-3;
 		margin-bottom: @margin-standard;
 	}
 	.screengrab {
@@ -134,12 +143,15 @@ header {
 	}
 }
 #resume {
+	article {
+		margin-bottom: @margin-large;
+	}
 	h2{
-		.headline-3;
-		border-bottom: 2px solid @blue;
+		padding-bottom: @margin-small;
+		border-bottom: 2px solid @bright-blue;
 	}
 	h3 {
-		.headline-4;
+		.headline-3;
 	}
 	#skills {
 		.center-text;
@@ -150,12 +162,17 @@ header {
 	}
 }
 #meet, #resume {
-	background: @green;
+	.white-blue;
+	.section-headline {
+		.headline-2;
+	}
 }
 #portfolio, #contact {
-	background: @white;
+	.blue-white;
+	.section-headline {
+		.headline-2;
+	}
 }
-
 /**Contact Form*/
 #contact-form {
 	.make-sm-column(12);
@@ -179,6 +196,8 @@ header {
     height: 35px;
     float: left; 
     clear: both;
+    font-size: 20px;
+    color: @bright-blue;
 	margin-bottom: @margin-standard;
     padding: @padding-standard;
 }
@@ -204,7 +223,7 @@ header {
 }
 #contact-form .required {
     font-weight:bold;
-    color: @red;    
+    color: @true-white;    
 }
 #contact-form #submit-button {
     width: auto;
@@ -216,17 +235,16 @@ header {
     border: none;
     display: block;
     float: left;
-	background-color: @red;
+	background-color: @true-white;
+	color: @bright-blue;
 }
 #contact-form #submit-button:hover {
-    background-color: @green;
+	margin-top: 5px;
 }
 #contact-form #submit-button:active {
     position:relative;
     top:1px;
 }
-
-
 /* Remove box shadow firefox, chrome and opera put around required fields. It looks rubbish. */
 input:required, textarea:required {
     -moz-box-shadow:none;
@@ -234,32 +252,22 @@ input:required, textarea:required {
     -o-box-shadow:none;
     box-shadow:none;
 }
- 
 /* Normalize placeholder styles */
- 
 /* chrome, safari */
 ::-webkit-input-placeholder {
-    color:#CCC;
+    color: @bright-blue;
     font-style:italic;
 }
- 
 /* mozilla */
 input:-moz-placeholder, textarea:-moz-placeholder {
-    color:#CCC;
+    color: @bright-blue;
     font-style:italic;
 }
- 
 /* ie (faux placeholder) */
 input.placeholder-text, textarea.placeholder-text  { 
-    color:#CCC;
+    color: @bright-blue;
     font-style:italic;
 }
-
-
-@media (max-width: @screen-md-max) {
-
-}
-
 @media(max-width: @screen-sm-max) {
 	header {
 		border-bottom: none;
@@ -278,6 +286,9 @@ input.placeholder-text, textarea.placeholder-text  {
 			ul li {
 				margin-bottom: 0;
 				padding: 0;
+				a {
+					color: @bright-blue;
+				}
 			}
 		}
 	}
@@ -303,5 +314,4 @@ input.placeholder-text, textarea.placeholder-text  {
 			}
 		}
 	}
-
 }

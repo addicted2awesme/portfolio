@@ -3,10 +3,9 @@
 $EmailFrom = "owen@owenlovesawesome.com";
 $EmailTo = "owen@owenlovesawesome.com";
 $Subject = "Hey! Someone likes your portfolio!";
-$Name = Trim(stripslashes($_POST['Name'])); 
-$Tel = Trim(stripslashes($_POST['Tel'])); 
-$Email = Trim(stripslashes($_POST['Email'])); 
-$Message = Trim(stripslashes($_POST['Message'])); 
+$Name = Trim(stripslashes($_POST['name'])); 
+$Email = Trim(stripslashes($_POST['email'])); 
+$Message = Trim(stripslashes($_POST['message'])); 
 
 // validation
 $validationOK=true;
@@ -19,9 +18,6 @@ if (!$validationOK) {
 $Body = "";
 $Body .= "Name: ";
 $Body .= $Name;
-$Body .= "\n";
-$Body .= "Tel: ";
-$Body .= $Tel;
 $Body .= "\n";
 $Body .= "Email: ";
 $Body .= $Email;

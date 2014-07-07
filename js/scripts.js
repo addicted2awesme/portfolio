@@ -1,5 +1,4 @@
 $(function() {
-
 	var container = document.querySelector('#my-portfolio');
 	var msnry;
 	// initialize Masonry after all images have loaded
@@ -7,7 +6,6 @@ $(function() {
 	  msnry = new Masonry( container );
 	});
 
-  
   $('a[href*=#]:not([href=#])').click(function() {
     if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
       var target = $(this.hash);

@@ -15,29 +15,41 @@
 .headline-1 {
 	font-family: @secondary-font, cursive;
 	font-size: @headline1-fontsize;
-	color: @blue;
-	text-shadow: 2px 2px 0px @red;
+	color: @true-white;
+	text-shadow: 2px 2px 0px @black;
 }
 
-.headline-2 {
-	font-family: @primary-font, 'helvetica-neue', 'helvetica', sans-serif;
-	font-size: @headline2-fontsize;
-	color: @blue;
-/* 	text-shadow: 2px 2px 0px @blue; */
+.white-blue {
+	.headline-2 {
+		font-family: @primary-font, 'helvetica-neue', 'helvetica', sans-serif;
+		font-size: @headline2-fontsize;
+		color: @bright-blue;
+	}
 }
 
-.headline-3 {
-	font-family: @primary-font, 'helvetica-neue', 'helvetica', sans-serif;
-	font-size: @headline3-fontsize;
-	color: @blue;
-	font-weight: 400;
-	margin-bottom: @margin-standard;
+.blue-white {
+	.headline-2 {
+		font-family: @primary-font, 'helvetica-neue', 'helvetica', sans-serif;
+		font-size: @headline2-fontsize;
+		color: @true-white;
+	}
 }
 
-.headline-4 {
-	font-family: @primary-font, 'helvetica-neue', 'helvetica', sans-serif;
-	font-size: @headline4-fontsize;
-	color: @blue;
-	font-weight: 400;
-	margin: @padding-small 0;
+.headline-3  {
+		font-family: @primary-font, 'helvetica-neue', 'helvetica', sans-serif;
+		font-size: @headline3-fontsize;
+		font-weight: 400;
+		margin-bottom: @margin-standard;
+}
+
+.white-blue {
+	.headline-3 {
+		color: @bright-blue;
+	}
+}
+
+.blue-white {
+	.headline-3 {
+		color: @true-white;
+	}
 }
