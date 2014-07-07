@@ -1,10 +1,12 @@
 <?php
+
+$EmailFrom = "owen@owenlovesawesome.com";
 $EmailTo = "owen@owenlovesawesome.com";
 $Subject = "Hey! Someone likes your portfolio!";
-$Name = Trim(stripslashes($_POST['name'])); 
-$Email = Trim(stripslashes($_POST['email'])); 
-$Message = Trim(stripslashes($_POST['message'])); 
-
+$Name = Trim(stripslashes($_POST['Name'])); 
+$Tel = Trim(stripslashes($_POST['Tel'])); 
+$Email = Trim(stripslashes($_POST['Email'])); 
+$Message = Trim(stripslashes($_POST['Message'])); 
 
 // validation
 $validationOK=true;
@@ -18,6 +20,8 @@ $Body = "";
 $Body .= "Name: ";
 $Body .= $Name;
 $Body .= "\n";
+$Body .= "Tel: ";
+$Body .= $Tel;
 $Body .= "\n";
 $Body .= "Email: ";
 $Body .= $Email;
@@ -27,11 +31,11 @@ $Body .= $Message;
 $Body .= "\n";
 
 // send email 
-$success = mail($EmailTo, $Subject, $Body, "From: <$Email>");
+$success = mail($EmailTo, $Subject, $Body, "From: <$EmailFrom>");
 
 // redirect to success page 
 if ($success){
-  print "<meta http-equiv=\"refresh\" content=\"0;URL=contactthanks.php\">";
+  print "<meta http-equiv=\"refresh\" content=\"0;URL=contactthanks.html\">";
 }
 else{
   print "<meta http-equiv=\"refresh\" content=\"0;URL=error.htm\">";
