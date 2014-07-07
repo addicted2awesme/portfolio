@@ -172,7 +172,7 @@
 			<section class="content-block" id="contact" name="contact">
 				<h1 class="section-headline">Drop a Line <i class="fa fa-paper-plane"></i></h1>
 				<div id="contact-form" class="clearfix">
-					    <form method="post" action="contactengine.php" target="_blank">
+					    <form method="post" action="contactengine.php">
 					        <label for="Name">Name: <span class="required">*</span></label>
 					        <input type="text" id="name" name="name" value="" placeholder="Whats your name?" required="required" autofocus="autofocus" />
 					         
