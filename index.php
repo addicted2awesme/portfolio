@@ -12,8 +12,6 @@
 	<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
 	<link rel="icon" href="img/favicon.ico" type="image/x-icon" />
 	
-
-	
 	<!--[if lt IE 9]>
 	<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 	<link rel="stylesheet" type="text/css" href="css/ie.css" />
@@ -23,7 +21,6 @@
 	<script src="js/masonry.min.js"></script>
 	<script src="js/imagesloaded.min.js"></script>
 	<script src="js/scripts.js"></script>
-
 </head>
 
 <body>
@@ -47,28 +44,27 @@
 				<h1 class="section-headline">Meet Owen! <i class="fa fa-comment"></i></h1>
 				
 				<div class="content-copy">
-				<h2 class="section-subheadline">Make stuff awesome. Have fun doing it.</h2>
-				<p>Hey! My name is Owen and I would love to help craft amazing experiences for you and your audience. I aim to create comfortable spaces where exploration is rewarded and there is no need to have a doctorate in order to know how things work.</p>
-				<p>I am excited to learn more about how I can help you in your endeavors so, after you are done checking out some of my previous work, drop me a line so that we can get to know each other better.</p>
-				<p>
-					<span class="headline-2">-Cheers!</span>
-				</p>
+					<h2 class="section-subheadline">Make stuff awesome. Have fun doing it.</h2>
+					<p>Hey! My name is Owen and I would love to help craft amazing experiences for you and your audience. I aim to create comfortable spaces where exploration is rewarded and there is no need to have a doctorate in order to understand how things work.</p>
+					<p>I am excited to learn more about how I can help you in your endeavors, so after you are done checking out some of my previous work, drop me a line so that we can get to know each other better.</p>
+					<p>
+						<span class="headline-2">-Cheers!</span>
+					</p>
 				</div>
 			</section>
 			
 			<section class="content-block" id="portfolio" name="portfolio">
 				<h1 class="section-headline">Past Work <i class="fa fa-desktop"></i></h1>
 				<div id="my-portfolio">
-				 	
 				 	<article class="project-block" id="mhw-block">
-						<h2>MountainHardwear.com</h2>
+						<h2>Mountain Hardwear.com</h2>
 						<img class="screengrab" src="img/mhw-site.png"/>
 						<div class="project-blurb">
-							<p>In addition to being heavily involved in the rebuilding and subsequent launching of the 2012 <a href="http://www.montainhardear.com">MountainHardwear.com</a> refreshed ecommerce site, I also built the inspiration section of the site which is WordPress based and needed to be custom configured for the needs of the business users.</p>
+							<p>I was heavily involved in the rebuilding and subsequent launching of the 2012 <a href="http://www.montainhardear.com">Mountain Hardwear.com</a> refreshed ecommerce site, I also built the inspiration section of the site which is WordPress based and needed to be custom configured for the needs of the business users. In 2014 I played a key role in the relaunch of the newest MHW site which is responsive and operates on a unified code base with the other CSC sites.</p>
 						</div>
 					</article>
 					
-					<article class="project-block" id="il-block">
+					<article class="project-block hidden-sm hidden-xs" id="il-block">
 						<h2>InVisible Light</h2>
 						<img class="screengrab" src="img/invisiblelight-mobile.png"/>
 						<div class="project-blurb">
@@ -80,9 +76,10 @@
 						<h2>Columbia Sportswear</h2>
 						<div class="project-blurb">
 							<img class="screengrab" src="img/columbia.png"/>
-							<p>Columbia Sportswear is a staple in the Northwest and I have had a wonderful time working on a wide variety of initiatives and projects with them. I have worked for them as both a contracted company as well as a full time employee. Working on a site that is translated into 5 different languages and conducts business in over 20 countries has unique challenges and has really helped me expand my skills and problem solving abilities.</p>
+							<p>Columbia Sportswear is a staple in the Northwest and I have had a wonderful time working on a wide variety of initiatives and projects with them. I have worked for them as both a contracted company as well as a full time employee. Working on a site that is translated into 5 different languages and conducts business in over 20 countries has unique challenges and has really helped me expand my skills and problem solving abilities. In 2014 I played a main role in rebuilding this and the other CSC sites with a unified code base and a responsive design.</p>
 						</div>
 					</article>
+					
 					<article class="project-block" id="res-block">
 						<h2>Resnick Sustainability Institute | CalTech</h2>
 						<div class="project-blurb">
@@ -90,6 +87,7 @@
 							<p>This site was really awesome to work on! The crew down at CalTech was a pleasure to interact with and they were very receptive to the input from myself and the lead-designer. Since the Resnick Institute (CalTech's sustainability focused research and development branch) hosts a very large amount and variety of information on their site, it was quite the task to develop a responsive site that would work well for all their needs. </p>
 						</div>
 					</article>
+					
 					<article class="project-block" id="res-block">
 						<h2>SOREL</h2>
 						<div class="project-blurb">
@@ -97,13 +95,23 @@
 							<p>Working on high-fashion sites is not something I would ever have thought I would do but it turns out to be really fun! I have been able work with them on a number of campaigns including the 2012 "Get Your Boots Dirty" initiative which was highly successful and helped the company put one of (if not the most) successful years in the books.</p>
 						</div>
 					</article>
+					
 					<article class="project-block" id="res-block">
 						<h2>Montrail Footwear</h2>
 						<div class="project-blurb">
 							<img class="screengrab" src="img/montrail.png"/>
-							<p>I have built out some really interesting marketing initiatives for Montrail as well as a ton of work on their ecommerce site and blog.</p>
+							<p>I have built out some really interesting marketing initiatives for Montrail as well as a ton of work on their ecommerce site and blog. In 2014 I helped relaunch</p>
 						</div>
 					</article>
+
+					<article class="project-block" id="res-block">
+						<h2>The Suite Barbershop</h2>
+						<div class="project-blurb">
+							<img class="screengrab" src="img/thesuite.png"/>
+							<p>I have had the pleasure of doing a few iterations of this site and am really happy with where it has ended up. Aside from the development work I also did all the design and strategy work. The online experience focuses on the mobile user (about 80% of all users access the site via mobile). I made sure it loads fast, is easy to navigate, and caters to the needs of the user.</p>
+						</div>
+					</article>
+					
 					<article class="project-block" id="res-block">
 						<h2>Icebreaker</h2>
 						<div class="project-blurb">
@@ -111,15 +119,7 @@
 							<p>I designed and built the main portal entrance for Icebreakers Business-to-Business site. This is where retailers like REI would go to see the upcoming seasons product and place orders. Instead of just having a simple sign in I opted to also integrate a small seasonal lookbook which was very well received. </p>
 						</div>
 					</article>
-					<article class="project-block" id="res-block">
-						<h2>Organic City Sounds</h2>
-						<div class="project-blurb">
-							<img class="screengrab" src="img/organicCitySounds.jpg"/>
-							<p>This was a very special project for me. The client happened to be a close friend of mine who was interested in creating an audio blog that focused on all that is awesome about Portland, Oregon. With the support of SoundCloud we were able to get it off the ground and produce a really stellar experience. The site itself was pretty simple but it was nice to work with different ways of presenting the user with audio listening environments.</p>
-						</div>
-					</article>
-
-
+				
 				</div>
 			</section>
 			
@@ -165,25 +165,12 @@
 					<p>Web Design &amp; Interactive Media
 					2008-2011</p>
 				</article>
-				<a title="Download Resume" href="http://www.owenlovesawesome.com/wp-content/uploads/2011/10/OwenSpencerResume.pdf">Download my resume here.</a>
-
+				<a title="Download Resume" href="/OwenSpencerResume.pdf">Download my resume here.</a>
 			</section>
 			
 			<section class="content-block" id="contact" name="contact">
 				<h1 class="section-headline">Drop a Line <i class="fa fa-paper-plane"></i></h1>
-				<div id="contact-form" class="clearfix">
-					    <form method="post" action="contactengine.php">
-					        <label for="Name">Name: <span class="required">*</span></label>
-					        <input type="text" id="name" name="name" value="" placeholder="Whats your name?" required="required" autofocus="autofocus" />
-					         
-					        <label for="email">Email Address: <span class="required">*</span></label>
-					        <input type="email" id="email" name="email" value="" placeholder="yourname@something.com" required="required" />
-					         
-							<label for="message">Message: <span class="required">*</span></label>
-					        <textarea id="message" name="message" placeholder="Soooooo, whats up?" required="required"></textarea>
-					        <input type="submit" value="Send to Owen" id="submit-button"/>
-					    </form>
-					</div>
+				<h2 class="section-headline" style="margin-top:40px;">owen@owenlovesawesome.com</h2>
 			</section>
 		</div><!-Begin Content Wrapper!->
 	</div><!-End Wrapper!->

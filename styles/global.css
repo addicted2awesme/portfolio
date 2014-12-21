@@ -910,6 +910,9 @@
 /*Fontz*/
 /*Paddingz & Marginz*/
 /*Nav*/
+body {
+	background: #45AAB8;
+}
 .body-1 {
   font-family: 'Quicksand', 'helvetica-neue', 'helvetica', sans-serif;
   font-size: 20px;
@@ -950,10 +953,10 @@
 }
 /*The basics*/
 *::-moz-selection {
-  background: #FFF;
+  background: red;
 }
 *::selection {
-  background: #FFF;
+  background: red;
 }
 a {
   color: inherit;
@@ -982,9 +985,11 @@ html {
   margin-left: auto;
   padding-left: 15px;
   padding-right: 15px;
+  max-width: 1332px;
 }
 .content-wrapper {
   margin-top: 105px;
+  display: none;
 }
 /*Headlines*/
 .section-headline {
@@ -1149,11 +1154,15 @@ header nav ul li a {
   min-height: 1px;
   padding-left: 15px;
   padding-right: 15px;
+  border: 1px solid #FFF;
 }
+
+
 @media (min-width: 992px) {
   .project-block {
     float: left;
-    width: 50%;
+    width: 40%;
+     margin: 5%;
   }
 }
 .project-block h2 {
@@ -1394,6 +1403,7 @@ textarea.placeholder-text {
   }
   .project-block {
     width: 100%;
+    margin-bottom: 40px;
   }
 }
 @media (max-width: 767px) {
