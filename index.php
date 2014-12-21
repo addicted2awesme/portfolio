@@ -143,8 +143,10 @@
 				</article>
 				<article id="experience">
 					<h2>Experience</h2>
-					<h3>Columbia Sportswear Company | 2013 - Current</h3>
-					<p>Web Developer II. Worked within a local team in conjunction with multiple offsite teams and vendors. Built and maintained ecommerce sites and components for four different brands across 5 languages and 20+ countries.</p>
+					<h3>DemandPDX | 2014 - Current</h3>
+					<p>Provide web development &amp; design as well as process implementation &amp; client management. Work with Demandware clients on everything from minor bug fixes all the way up to full website implementations.</p>
+					<h3>Columbia Sportswear Company | 2011 - 2014</h3>
+					<p>Web Developer II. Worked within a local team in conjunction with multiple offsite teams and vendors. Built and maintained ecommerce sites and components for four different brands across 5+ languages and 20+ countries.</p>
 					<h3>Owen Spencer Design & Development | 2010 - Current</h3>
 					<p>Owner and operator. Web design, development, and digital presence strategist. Worked with a variety of companies ranging from small local establishments all the way up to household name, global companies.</p>
 					<h3>Bicycle Transportation Alliance | 2011</h3>
@@ -170,7 +172,7 @@
 			
 			<section class="content-block" id="contact" name="contact">
 				<h1 class="section-headline">Drop a Line <i class="fa fa-paper-plane"></i></h1>
-				<h2 class="section-headline" style="margin-top:40px;">owen@owenlovesawesome.com</h2>
+				<h2 class="email-address" style="margin-top:40px;"><a href="mailto:owen@owenlovesawesome.com">owen@owenlovesawesome.com</a></h2>
 			</section>
 		</div><!-Begin Content Wrapper!->
 	</div><!-End Wrapper!->
